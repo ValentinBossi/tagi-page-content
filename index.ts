@@ -14,7 +14,7 @@ let browser: ChromiumBrowser;
 
 app.use(json())
 
-app.use(async function (req, res, next) {
+app.use(function (req, res, next) {
   let hostname;
   try {
     hostname = new URL(req.body.url).hostname;
