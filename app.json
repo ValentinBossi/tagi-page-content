@@ -1,0 +1,7 @@
+{
+  "name": "tagesanzeiger-page-content",
+  "repository": "https://github.com/ValentinBossi/tagi-page-content",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
