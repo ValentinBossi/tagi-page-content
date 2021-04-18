@@ -38,7 +38,8 @@ app.get('/pagecontent', function (req, res, next) {
 app.listen(PORT, async function () {
   console.log('Example app listening on port ' + PORT + '!');
   browser = await chromium.launch({
-    headless: true
+    headless: true,
+    args: ['--disable-dev-shm-usage']
   });
   console.log('Chromium is loaded in version: ', browser.version());
 });
