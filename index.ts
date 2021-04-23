@@ -60,6 +60,7 @@ const getPageContent = async (url: string): Promise<string> => {
   // Fill input[type="password"]
   await page.fill('input[type="password"]', password);
   // Click button:has-text("Einloggen")
+  await page.click('button:has-text("Einloggen")')
   await page.waitForLoadState('networkidle');
 
   await page.goto(url);
